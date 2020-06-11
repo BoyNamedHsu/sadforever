@@ -254,6 +254,9 @@ function paypalStuff() {
                 label: 'paypal',
 
             },
+            funding: {
+                disallowed: [ paypal.FUNDING.CREDIT ]
+            },
             createOrder: function (data, actions) {
                 return actions.order.create({
                     purchase_units: [{
