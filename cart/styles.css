@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Tw Cen MT Mobile";
+    src: url(../tcm.ttf) format("truetype");
+}
+
+body {
+    background: rgb(188, 207, 253);
+    background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
+}
+
+* {
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+
+table.table {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 95%;
+    vertical-align: middle;
+}
+
+img.cashier {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+}
+
+div.round {
+    border-radius: 40px;
+    background: linear-gradient(270deg, rgba(146,204,255,1) 0%, rgba(196,213,254,1) 100%);
+}
+
+div.container {
+    padding-top: 3%;
+}
+
+.dropbtn {
+    padding: 10px;
+    border: none;
+    align-self: center;
+    text-align: center;
+    background: rgba(0,0,0,0);
+    width: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    max-width: 100px;
+    z-index: 1;
+    background: linear-gradient(270deg, rgba(196,213,254,1) 100%, rgba(146,204,255,1) 0%);
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+a.dropdown-content:hover {
+    border-bottom-style: dashed; !important;
+    font-style: italic;
+    color: #286cac;
+}
+
+button.drop {
+    background: rgba(0,0,0,0);
+    border: none;
+    padding: 5px 10px;
+}
+
+a.text {
+    text-decoration: none; !important;
+    color: black;
+}
+
+a.text:hover {
+    text-decoration: none; !important;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+img.cashier {
+    max-width: 27%;
+    z-index: 10;
+}
+
+div#paypal-button-container {
+    display: block;
+    padding-top: 1%;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    img.logo {
+        max-width: 30%
+    }
+
+    * {
+        font-size: 1.6vh;
+    }
+    div#paypal-button-container {
+        max-width: 60%;
+    }
+
+    img.cashier {
+        max-width: 90%;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+    img.logo {
+        max-width: 18%
+    }
+
+    * {
+        font-size: .9vw;
+    }
+    div#paypal-button-container {
+        max-width: 25%;
+    }
+
+}

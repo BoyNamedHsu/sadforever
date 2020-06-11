@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Tw Cen MT";
+}
+
+body {
+    font-family: arial, serif;
+    background: rgb(188, 207, 253);
+    background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
+    line-height: 0;
+}
+
+img.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:35%;
+}
+
+img.sadboy {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:55%
+}
+
+@media only screen and (max-width: 1000px) {
+    img.sadboy {
+        width:75%
+    }
+
+    img.logo {
+        top:40%;
+        width:80%;
+    }
+}
+

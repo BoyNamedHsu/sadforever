@@ -1,0 +1,143 @@
+/* this file determines the style for each item's store page. */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Tw Cen MT Mobile";
+    src: url(../tcm.ttf) format("truetype");
+}
+
+body {
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+    background: rgb(188, 207, 253);
+    background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
+}
+
+img.product_image {
+    display: block;
+    width: 80%;
+}
+
+/* the size of each sticker */
+p.product_details {
+    font-size: 2vw;
+    position:absolute;
+}
+
+/* flavor text of each sticker */
+p.product_description {
+    font-size: 2.1vw;
+    line-height: 1.15;
+    font-weight: 500;
+    width: 75%;
+}
+
+p.price {
+    transform: translate(0, 20%);
+    font-size: 3vw;
+}
+
+p.product_name {
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+
+/* add to cart button */
+.custom_btn {
+    display: inline-block;
+    margin: auto;
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+    max-height: 4vw;
+    min-width: 34vw;
+    border-radius: 20px;
+    color: #fff;
+    background: #7986cb;
+}
+
+.sold_out {
+    background-color: #708090;
+}
+
+div.price {
+    transform: translate(0, 10%);
+}
+
+#cartAdder {
+    margin-top: -.5vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    p.product_details {
+        display: none;
+    }
+    img.logo {
+        max-width: 30%
+    }
+
+    p.product_description {
+        text-align: center;
+        font-weight: 400;
+        font-size: 5vw;
+        width: 95%;
+    }
+
+    /* want to center some stuff special to mobile */
+    .mobile_align {
+        text-align: center; !important;
+        margin-left: auto; !important;
+        margin-right: auto; !important;
+        margin-bottom: 0; !important;
+    }
+
+    .custom_btn {
+        float: none !important;
+        max-height: 15vw !important;
+        min-width: 90% !important;
+   }
+
+    p.price {
+        font-size: 5vw;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+
+    #cartAdder {
+        font-size : 5vw !important;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+    img.logo {
+        max-width: 18%
+    }
+
+    p.price {
+        padding-left: 27% !important;
+    }
+
+    img.product_image {
+        float:right;
+        padding-right: 1rem !important;
+    }
+
+    #cartAdder {
+        font-size : 2vw !important;
+    }
+
+}
+
+
+
+
+

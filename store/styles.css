@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Tw Cen MT Mobile";
+    src: url(../tcm.ttf) format("truetype");
+}
+
+body {
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+    background: rgb(188, 207, 253);
+    background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
+    line-height: 0;
+    margin: 0;
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+p {
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+    line-height: 1vw;
+    text-align: center;
+}
+
+.product {
+    padding-top: 2%;
+}
+
+.first-container {
+    padding-top: 2%;
+}
+
+img.product {
+    object-fit: scale-down;
+    transition: 0.30s;
+    -webkit-transition: 0.30s;
+    -moz-transition: 0.30s;
+    -ms-transition: 0.30s;
+    display: block;
+}
+
+img.product:hover {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.description {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img.product {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.product_link {
+    text-decoration: none;
+    color: black
+} /* Globally */
+
+/* Each state */
+
+a.product_link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a.product_link:hover {
+    text-decoration: none; !important;
+    border-bottom-style: none; !important;
+    font-style: italic;
+    color: #286cac;
+}
+
+.description {
+    padding-top: 6%;
+}
+
+th {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    img.product {
+        height: 22vh;
+    }
+
+    p.name {
+        font-size: 3vw;
+
+    }
+
+    p.price {
+        font-size: 2vw;
+    }
+
+    img.logo {
+        width: 75%;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+    img.product {
+        height: 13vw;
+    }
+
+    p.name {
+        font-size: 1.5vw;
+    }
+
+    p.price {
+        font-size: 1vw;
+    }
+
+    .container-fluid {
+        max-width: 90%;
+    }
+    img.logo {
+        width: 30%;
+    }
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Tw Cen MT Mobile";
+    src: url(../tcm.ttf) format("truetype");
+}
+
+body {
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+    background: rgb(188, 207, 253);
+    background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
+}
+
+.thanks {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.thanks_text {
+    display: block;
+    position: absolute;
+    bottom: 40%;
+    left: 48%;
+    transform: translate(-50%, 0);
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    img.logo {
+        max-width: 30%;
+    }
+
+    .thanks_text {
+        bottom: 50%;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+    img.logo {
+        max-width: 18%;
+    }
+}
