@@ -228,7 +228,7 @@ function displayCart() {
             containers[i].innerHTML = "";
         }
         document.getElementById('cashier').src = "../images/empty.png";
-        document.getElementById('paypal_script').innerHTML = "<img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" onload=\"removePaypalStuff();\" style=\"display: none\">\n";
+        document.getElementById('paypal_script').innerHTML = "<img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"display: none\">\n";
         let remove = document.getElementsByTagName("body")[0];
         remove.removeChild(document.getElementById("paypal-button-container"));
         remove.removeChild(document.getElementById("paypal_script"));
