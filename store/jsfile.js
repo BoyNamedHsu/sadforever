@@ -252,11 +252,8 @@ function paypalStuff() {
                 shape: 'pill',
                 color: 'gold',
                 label: 'paypal',
-
-            },
-            funding: {
-                disallowed: [ paypal.FUNDING.CREDIT ]
-            },
+                layout: 'vertical'
+            }
             createOrder: function (data, actions) {
                 return actions.order.create({
                     purchase_units: [{
