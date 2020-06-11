@@ -252,8 +252,8 @@ function paypalStuff() {
                 shape: 'pill',
                 color: 'gold',
                 label: 'paypal',
-                layout: 'vertical'
-            }
+                layout: 'vertical',
+            },
             createOrder: function (data, actions) {
                 return actions.order.create({
                     purchase_units: [{
