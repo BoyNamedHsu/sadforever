@@ -9,13 +9,13 @@ body {
     background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
 }
 
-.text {
-    text-align: center;
-}
 
-h1, p {
+
+
+h1, h2, p {
     display: inline-block;
     text-align: left;
+    padding-left: 40px;
 }
 
 img.logo {
@@ -25,12 +25,14 @@ img.logo {
     padding-top: 40px;
 }
 
-.head {
-    font-size:300%;
-}
 
 #top {
     padding-top: 2%;
+}
+
+#contact {
+    padding-top: 1%;
+    text-align: center;
 }
 
 #second {
@@ -53,6 +55,10 @@ img.logo {
     p {
         font-size: 2.5vh;
         text-align: center;
+    }
+
+    #me {
+        min-width: 75%;
     }
 
     .head {
