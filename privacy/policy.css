@@ -11,13 +11,11 @@ body {
 
 
 
-.text {
-    text-align: center;
-}
 
-h1, p {
+h1, h2, p {
     display: inline-block;
     text-align: left;
+    padding-left: 40px;
 }
 
 img.logo {
@@ -27,9 +25,6 @@ img.logo {
     padding-top: 40px;
 }
 
-.head {
-    font-size:300%;
-}
 
 #top {
     padding-top: 2%;
