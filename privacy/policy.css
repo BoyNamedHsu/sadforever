@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Tw Cen MT Mobile";
+    src: url(../tcm.ttf) format("truetype");
+}
+
+body {
+    font-family: "Tw Cen MT", "Tw Cen MT Mobile", sans-serif;
+    background: rgb(188, 207, 253);
+    background: linear-gradient(270deg, rgba(188, 207, 253, 1) 0%, rgba(122, 196, 255, 1) 100%);
+}
+
+.text {
+    text-align: center;
+}
+
+h1, p {
+    display: inline-block;
+    text-align: left;
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+.head {
+    font-size:300%;
+}
+
+#top {
+    padding-top: 2%;
+}
+
+#second {
+    padding-top: 1%;
+}
+
+#mailbox {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 20%;
+}
+
+@media only screen and (max-width: 1000px) {
+    img.logo {
+        max-width: 30%;
+    }
+
+    p {
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    .head {
+        font-size: 300%;
+    }
+
+    #second {
+        padding-top: 1%;
+    }
+
+    #mailbox {
+        width: 60%;
+    }
+
+    #contact {
+        padding-top: 3%;
+    }
+
+    #top {
+        padding-top: 4%;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+    img.logo {
+        max-width: 18%;
+    }
+
+    p {
+        font-size: 1.2vw;
+    }
+}
